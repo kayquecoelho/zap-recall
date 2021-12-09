@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu .logo {
+    width: 218px;
+    height: 279px;
+}
+
+.baralho {
+    width: 345px;
+    height: 72px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    border: 3px solid #FFEF61;
+    border-radius: 12px;
+}
+
+.baralho p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.baralho img {
+    height: 25px;
+    margin-left: 5px;
+}
+
+.tela-flashcard .logo-mini{
+    width: 141px;
+    height: 54px;
+
+    position: fixed;
+    top: 26px;
+    left: 26px;
+}
+
+.tela-flashcard {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 392px;
+    height: 576px;
+
+    color: #000000;
+    background-color: #FFFFFF;
+
+    border-radius: 12px;    
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-verso {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    padding: 10px 50px;
+}
+
+.card-verso .pergunta{
+    position: absolute;
+    top: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+}
+
+.card-verso .resposta {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    word-break: break-all;
+}
+
+.card-frente {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    padding: 10px 50px;
+}
+
+.num-cards, .num-cards{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.card-frente .pergunta {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.card-frente .virar {
+    width: 40px ;
+    height: 40px;
+
+    position: absolute;
+    right: 15px;
+    bottom: 15px; 
+}
+
+.card-verso .opcoes {
+    position: absolute;
+    bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 292px;
+}
+
+.aprendi-agora, .nao-lembrei, .com-esforco, .zap{
+    width: 65px;
+    height: 48px;
+
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    word-break: break-word;
+
+    border-radius: 12px;
+}
+
+.aprendi-agora {
+    border: 3px solid #000000;
+}
+
+.nao-lembrei {
+    border: 3px solid #F64848;
+}
+
+.com-esforco {
+    border: 3px solid #62DB38;
+}
+
+.zap {
+    border: 3px solid #FFEF61;
+}
