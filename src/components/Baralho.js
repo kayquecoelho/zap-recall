@@ -1,10 +1,11 @@
-export default function Baralho() {
-    
+import Flashcard from "./Flashcard";
+
+export default function Baralho({deck, setPaginaAtual}) {
 
   return (
     <div className="baralho">
-      <p>Projeto React</p>
-      <img src="./assets/next.png" /* onClick={() => renderizar()}  *//>
+      <p>{deck.titulo}</p>
+      <img src="./assets/next.png"  onClick={() => setPaginaAtual(<Flashcard deck={deck} />)} />
     </div>
   );
 }
