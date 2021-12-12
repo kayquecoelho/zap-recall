@@ -5,11 +5,13 @@ import { useState } from "react";
 import Opcoes from "./Opcoes";
 import BotaoAvançar from "./BotaoAvancar";
 
-export default function Flashcard({ deck }) {
+export default function Flashcard({ deck, setPaginaAtual }) {
   const [faceAtual, setFaceAtual] = useState("frente");
   const [indexAtual, setIndexAtual] = useState(0);
   const [estadoAtual, setEstadoAtual] = useState("a responder");
   const [classeAtual, setClasseAtual] = useState("");
+  console.log(classeAtual)
+  const [contadorErros, setContadorErros] = useState(0);
 
   return (
     <div className="tela-flashcard">
@@ -25,7 +27,7 @@ export default function Flashcard({ deck }) {
           />
         ) : (
           <CardVerso
-            lengthDeck={deck.questoes.length}
+            quantity={deck.questoes.length}
             pergunta={deck.questoes[indexAtual]}
             indexAtual={indexAtual}
           >
@@ -33,6 +35,8 @@ export default function Flashcard({ deck }) {
               <Opcoes
                 setEstadoAtual={setEstadoAtual}
                 setClasseAtual={setClasseAtual}
+                contadorErros={contadorErros}
+                setContadorErros= {setContadorErros}
               />
             ) : (
               <BotaoAvançar
@@ -41,6 +45,9 @@ export default function Flashcard({ deck }) {
                 setFaceAtual={setFaceAtual}
                 setIndexAtual={setIndexAtual}
                 indexAtual={indexAtual}
+                setPaginaAtual= {setPaginaAtual}
+                quantity={deck.questoes.length}
+                contadorErros={contadorErros}
               />
             )}
           </CardVerso>

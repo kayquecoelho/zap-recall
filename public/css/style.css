@@ -43,7 +43,8 @@ body {
     margin-left: 5px;
 }
 
-.tela-flashcard .logo-mini{
+.tela-flashcard .logo-mini,
+.resultado .logo-mini {
     width: 141px;
     height: 54px;
 
@@ -188,4 +189,49 @@ body {
 
 .zap {
     border: 3px solid #FFEF61;
+}
+.resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.resultado .mensagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    color: #000000;
+}
+
+.mensagem .titulo {  
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensagem .titulo span {
+    display: flex;
+    margin-left: 5px;
+}
+
+.titulo .emoji {
+    width: 34px;
+    height: 34px;
+}
+
+.mensagem .subtitulo {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
 }

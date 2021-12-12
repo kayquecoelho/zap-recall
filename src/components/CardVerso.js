@@ -1,5 +1,5 @@
 export default function CardVerso({
-  lengthDeck,
+  quantity,
   pergunta: { pergunta, resposta },
   indexAtual,
   children,
@@ -7,7 +7,7 @@ export default function CardVerso({
   return (
     <div className="card-verso">
       <span className="num-cards">
-        {indexAtual + 1}/{lengthDeck}
+        {indexAtual + 1}/{quantity}
       </span>
       <p className="pergunta">{pergunta}</p>
       <p className="resposta"> {resposta}</p>
