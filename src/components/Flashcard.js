@@ -12,7 +12,7 @@ export default function Flashcard({ deck, setPaginaAtual, meta}) {
   const [estadoAtual, setEstadoAtual] = useState("a responder");
   const [classeAtual, setClasseAtual] = useState("");
   const [contadorSucesso, setContadorSucesso] = useState(0);
-
+  
   return (
     <div className="tela-flashcard">
       <LogoMini />

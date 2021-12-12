@@ -1,6 +1,6 @@
 import LogoMini from "./LogoMini";
 import next from "../assets/next.png";
-import party from"../assets/party.png";
+import party from "../assets/party.png";
 import sad from "../assets/sad.png";
 
 export default function Resultado({ contadorSucesso, meta, setPaginaAtual }) {
@@ -8,9 +8,23 @@ export default function Resultado({ contadorSucesso, meta, setPaginaAtual }) {
     <div className="resultado">
       <LogoMini />
 
-      {contadorSucesso >= meta ? <Sucesso /> : <Fracasso />}
+      {contadorSucesso >= meta ? (
+        <Mensagem
+          titulo="PARABÉNS!"
+          subtitulo="Você não esqueceu de nenhum flashcard!"
+          informacao=""
+          img={party}
+        />
+      ) : (
+        <Mensagem
+          titulo="Putz..."
+          informacao={`Você esqueceu ${meta - contadorSucesso} flashcards..`}
+          subtitulo="Não desanime! Na próxima você consegue!"
+          img={sad}
+        />
+      )}
 
-      <button className="reiniciar" onClick={()=> setPaginaAtual(false)}>
+      <button className="reiniciar" onClick={() => setPaginaAtual(false)}>
         Tentar novamente
         <span>
           <img className="next" src={next} />
@@ -20,33 +34,20 @@ export default function Resultado({ contadorSucesso, meta, setPaginaAtual }) {
   );
 }
 
-function Sucesso() {
+function Mensagem({ img, titulo, informacao, subtitulo }) {
   return (
     <div className="mensagem">
       <p className="titulo">
-        PARABÉNS!
+        {titulo}
         <span>
-          <img src={party} className="emoji" />
+          <img src={img} className="emoji" />
         </span>
       </p>
-      <p className="subtitulo">Você não esqueceu de nenhum flashcard!</p>
-    </div>
-  );
-}
 
-function Fracasso() {
-  return (
-    <div className="mensagem">
-      <p className="titulo">
-        Putz...
-        <span>
-          <img src={sad} className="emoji" />
-        </span>
-      </p>
-      <p className="subtitulo">
-        Você esqueceu alguns flashcards.. <br /> Não desanime! Na próxima você
-        consegue!
-      </p>
+      <div className="texto">
+        <p className="informacao"> {informacao}</p>
+        <p className="subtitulo">{subtitulo}</p>
+      </div>
     </div>
   );
 }
