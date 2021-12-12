@@ -1,3 +1,4 @@
+import logo from "../assets/logo.png";
 export default function Logo (){
-    return (<img src = "./assets/logo.png" className="logo"></img>)
+    return (<img src ={logo} className="logo"></img>)
 }

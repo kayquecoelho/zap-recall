@@ -16,6 +16,28 @@ body {
     height: 279px;
 }
 
+.menu-baralhos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meta {
+    width: 345px;
+    height: 49px;
+    
+    padding: 24px 65px 24px 16px;
+    margin-bottom: 25px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+}
+
+.meta::placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
 .baralho {
     width: 345px;
     height: 72px;
@@ -29,6 +51,7 @@ body {
 
     border: 3px solid #FFEF61;
     border-radius: 12px;
+    background-color: #FFFFFF;
 }
 
 .baralho p {
@@ -38,7 +61,8 @@ body {
     line-height: 23px;
 }
 
-.baralho img {
+.baralho .next, 
+.resultado .next {
     height: 25px;
     margin-left: 5px;
 }
@@ -56,25 +80,34 @@ body {
 .tela-flashcard {
     height: 100vh;
     width: 100vw;
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+
+    color: #000000;
+}
+.tela-flashcard .titulo {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
 }
 
 .card {
     width: 392px;
     height: 576px;
 
-    color: #000000;
     background-color: #FFFFFF;
 
     border-radius: 12px;    
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
 }
+
 .card-verso .virar {
     position: absolute;
-    bottom: 15px;
     right: 15px;
+    bottom: 15px;
 }
 
 .card-verso {
@@ -190,12 +223,14 @@ body {
 .zap {
     border: 3px solid #FFEF61;
 }
+
 .resultado {
+    height: 100vh;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    height: 100vh;
 }
 
 .resultado .mensagem {
@@ -205,18 +240,20 @@ body {
     align-items: center;
     gap: 15px;
 
+    margin-bottom: 25px;
+
     color: #000000;
 }
 
 .mensagem .titulo {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
     text-align: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .mensagem .titulo span {
@@ -234,4 +271,25 @@ body {
     font-weight: 400;
     line-height: 26px;
     text-align: center;
+}
+
+.reiniciar {
+    width: 372px;
+    height: 72px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    border: 3px solid #FFEF61;
+    border-radius: 12px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.reiniciar span {
+    display: flex;
 }

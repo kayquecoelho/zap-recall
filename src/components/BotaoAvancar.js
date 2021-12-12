@@ -1,4 +1,5 @@
 import Resultado from "./Resultado";
+import turn from "../assets/turn.png";
 
 export default function BotaoAvançar({
   setFaceAtual,
@@ -8,12 +9,13 @@ export default function BotaoAvançar({
   indexAtual,
   setPaginaAtual,
   quantity,
-  contadorErros,
+  contadorSucesso,
+  meta,
 }) {
 
   function restaurarCard() {
     if (indexAtual + 1 === quantity){
-        setPaginaAtual(<Resultado contadorErros={contadorErros}/>)
+        setPaginaAtual(<Resultado contadorSucesso={contadorSucesso} meta={meta} setPaginaAtual={setPaginaAtual}/>)
     } else {
         setFaceAtual("frente");
         setIndexAtual(indexAtual + 1);
@@ -23,10 +25,6 @@ export default function BotaoAvançar({
   }
 
   return (
-    <img
-      src="./assets/turn.png"
-      className="virar"
-      onClick={() => restaurarCard()}
-    />
+    <img src={turn} className="virar" onClick={() => restaurarCard()} />
   );
 }

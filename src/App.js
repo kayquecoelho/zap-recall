@@ -1,7 +1,6 @@
 import Menu from "./components/Menu";
 import {useState} from "react"
 
-
 export default function App (){
     const [paginaAtual, setPaginaAtual] = useState(false);
     if (paginaAtual === false){
@@ -9,7 +8,7 @@ export default function App (){
     }
     return (
         <>
-            {paginaAtual}
+            { paginaAtual }
         </>
     )
 }

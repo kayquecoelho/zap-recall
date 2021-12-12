@@ -1,11 +1,21 @@
 import LogoMini from "./LogoMini";
+import next from "../assets/next.png";
+import party from"../assets/party.png";
+import sad from "../assets/sad.png";
 
-export default function Resultado({ contadorErros }) {
+export default function Resultado({ contadorSucesso, meta, setPaginaAtual }) {
   return (
     <div className="resultado">
       <LogoMini />
 
-      {contadorErros === 0 ? <Sucesso /> : <Fracasso />}
+      {contadorSucesso >= meta ? <Sucesso /> : <Fracasso />}
+
+      <button className="reiniciar" onClick={()=> setPaginaAtual(false)}>
+        Tentar novamente
+        <span>
+          <img className="next" src={next} />
+        </span>
+      </button>
     </div>
   );
 }
@@ -16,20 +26,21 @@ function Sucesso() {
       <p className="titulo">
         PARABÉNS!
         <span>
-          <img src="./assets/party.png" className="emoji" />
+          <img src={party} className="emoji" />
         </span>
       </p>
       <p className="subtitulo">Você não esqueceu de nenhum flashcard!</p>
     </div>
   );
 }
+
 function Fracasso() {
   return (
     <div className="mensagem">
       <p className="titulo">
         Putz...
         <span>
-          <img src="./assets/sad.png" className="emoji" />
+          <img src={sad} className="emoji" />
         </span>
       </p>
       <p className="subtitulo">
