@@ -12,7 +12,7 @@ export default function Baralho({ deck, setPaginaAtual, meta }) {
   }
 
   return (
-    <button className="baralho" onClick={validarInfo}>
+    <button className="baralho" onClick={validarInfo} data-identifier="start-zap-recall" >
       <p>{deck.titulo}</p>
       <span>
         <img className="next" src={next} />

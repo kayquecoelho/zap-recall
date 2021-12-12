@@ -19,7 +19,7 @@ export default function Flashcard({ deck, setPaginaAtual, meta}) {
 
       <p className="titulo">{deck.titulo}</p>
       
-      <div className={`card ${classeAtual}`}>
+      <div className={`card ${classeAtual}`} data-identifier="flashcard">
         {faceAtual === "frente" ? (
           <CardFrente
             setFaceAtual={setFaceAtual}

@@ -194,6 +194,8 @@ body {
     height: 48px;
 
     padding: 5px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
 
     display: flex;
     align-items: center;
@@ -204,8 +206,7 @@ body {
     line-height: 12px;
     text-align: center;
     word-break: break-word;
-
-    border-radius: 12px;
+    transition: background-color 0.5s;
 }
 
 .aprendi-agora {
@@ -296,4 +297,15 @@ body {
 
 .reiniciar span {
     display: flex;
+}
+
+.opcao:hover, 
+.baralho:hover,
+.reiniciar:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.virar:hover {
+    cursor: pointer;
 }

@@ -17,7 +17,7 @@ export default function Resultado({ contadorSucesso, meta, setPaginaAtual }) {
         />
       ) : (
         <Mensagem
-          titulo="Putz..."
+          titulo="Putz.."
           informacao={`Você esqueceu ${meta - contadorSucesso} flashcards..`}
           subtitulo="Não desanime! Na próxima você consegue!"
           img={sad}

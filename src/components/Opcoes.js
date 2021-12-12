@@ -15,21 +15,21 @@ export default function Opcoes({
 
   return (
     <div className="opcoes">
-      <div className="opcao aprendi-agora" onClick={() => mudarClasse("aprendi-agora")} >
+      <button className="opcao aprendi-agora" onClick={() => mudarClasse("aprendi-agora")} >
         Aprendi agora
-      </div>
+      </button>
 
-      <div className="opcao nao-lembrei" onClick={() => mudarClasse("nao-lembrei")}>
+      <button className="opcao nao-lembrei" onClick={() => mudarClasse("nao-lembrei")}>
         Não lembrei
-      </div>
+      </button>
 
-      <div className="opcao com-esforco"onClick={() => mudarClasse("com-esforco")}>
+      <button className="opcao com-esforco"onClick={() => mudarClasse("com-esforco")}>
         Lembrei com esforço
-      </div>
+      </button>
 
-      <div className="opcao zap" onClick={() => mudarClasse("zap")}>
+      <button className="opcao zap" onClick={() => mudarClasse("zap")}>
         Zap!
-      </div>
+      </button>
     </div>
   );
 }
