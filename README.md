@@ -24,11 +24,13 @@ O app nos ajuda mostrando os flashcards do deck e nos dando a opção de informa
 - [X] Bônus: O título do deck atual deverá ser mostrado na tela de flashcards <br>
 
 ### Tech Stack
+---
 
 Linguagens e ferramentas: <br>
 
 <p align="center">
-<img src ="	https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+
+<img src ="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
@@ -37,12 +39,16 @@ Linguagens e ferramentas: <br>
 <br>
 
 ### Deploy
+---
 
 O layout da aplicação está disponível no Vercel:
- <a href=""> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"> </a>
+<br>
+<a href=""> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"> </a>
 
 ### Autor
+---
 
 <img src="https://avatars.githubusercontent.com/u/92492921?s=400&u=f0baf8cb4b2f009c2dac4377814681991f37d51b&v=4" width="100px;" style="border-radius: 50%;"/>
+<br>
 
 Feito por Kayque Coelho! 
