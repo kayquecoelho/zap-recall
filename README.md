@@ -23,8 +23,7 @@ O app nos ajuda mostrando os flashcards do deck e nos dando a opção de informa
 - [X] Bônus: Todos os decks disponíveis deverão aparecer como botões na tela de início <br>
 - [X] Bônus: O título do deck atual deverá ser mostrado na tela de flashcards <br>
 
-### Tech Stack
---
+## Tech Stack
 
 Linguagens e ferramentas:
 <br>
@@ -35,9 +34,9 @@ Linguagens e ferramentas:
 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
 <p>
+<br>
 
-### Deploy
---
+## Deploy
 
 O layout da aplicação está disponível no Vercel:
 
