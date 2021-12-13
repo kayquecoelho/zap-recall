@@ -26,10 +26,10 @@ O app nos ajuda mostrando os flashcards do deck e nos dando a opção de informa
 ### Tech Stack
 ---
 
-Linguagens e ferramentas: <br>
+Linguagens e ferramentas:
+<br>
 
 <p align="center">
-
 <img src ="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
@@ -42,8 +42,8 @@ Linguagens e ferramentas: <br>
 ---
 
 O layout da aplicação está disponível no Vercel:
-<br>
-<a href=""> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"> </a>
+
+<a href="https://zap-recall-e4j3xkbae-tieskay.vercel.app/"> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"> </a>
 
 ### Autor
 ---

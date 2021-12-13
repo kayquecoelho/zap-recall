@@ -5,7 +5,7 @@ export default function CardFrente({lengthDeck, pergunta, indexAtual, setFaceAtu
     <div className= "card-frente">
       <span className="num-cards" data-identifier="counter">{indexAtual+1}/{lengthDeck} </span>
       <p className="pergunta">{pergunta.pergunta}</p>
-      <img src={turn} className="virar" onClick={() => setFaceAtual("verso")}/>
+      <img className="virar" src={turn} alt="" onClick={() => setFaceAtual("verso")}/>
     </div>
   );
 }

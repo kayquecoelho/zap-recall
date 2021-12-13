@@ -25,6 +25,6 @@ export default function BotaoAvançar({
   }
 
   return (
-    <img src={turn} className="virar" data-identifier="arrow" onClick={() => restaurarCard()} />
+    <img className="virar" src={turn} alt="" data-identifier="arrow" onClick={() => restaurarCard()} />
   );
 }

@@ -27,7 +27,7 @@ export default function Resultado({ contadorSucesso, meta, setPaginaAtual }) {
       <button className="reiniciar" onClick={() => setPaginaAtual(false)}>
         Tentar novamente
         <span>
-          <img className="next" src={next} />
+          <img className="next" alt="" src={next} />
         </span>
       </button>
     </div>
@@ -40,7 +40,7 @@ function Mensagem({ img, titulo, informacao, subtitulo }) {
       <p className="titulo">
         {titulo}
         <span>
-          <img src={img} className="emoji" />
+          <img src={img} alt="" className="emoji" />
         </span>
       </p>
 
