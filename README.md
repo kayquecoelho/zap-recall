@@ -26,6 +26,7 @@ O app nos ajuda mostrando os flashcards do deck e nos dando a opção de informa
 ## Tech Stack
 
 Linguagens e ferramentas:
+
 <br>
 
 <p align="center">
