@@ -24,7 +24,7 @@ O app nos ajuda mostrando os flashcards do deck e nos dando a opção de informa
 - [X] Bônus: O título do deck atual deverá ser mostrado na tela de flashcards <br>
 
 ### Tech Stack
----
+--
 
 Linguagens e ferramentas:
 <br>
@@ -36,14 +36,12 @@ Linguagens e ferramentas:
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
 <p>
 
-<br>
-
 ### Deploy
----
+--
 
 O layout da aplicação está disponível no Vercel:
 
-<a href="https://zap-recall-e4j3xkbae-tieskay.vercel.app/"> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"> </a>
+<a href="https://zap-recall-tieskay.vercel.app/" target="_blank"> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"> </a>
 
 ### Autor
 ---
